@@ -2,19 +2,18 @@ package problem03;
 
 public class Main {
 
-	public static void main(String[] args) {
-		MyStack stack = new MyStack(3);
+	public static void main(String[] args) {	
+		MyStack stack = new MyStack(3);	
 		stack.push("Hello");
 		stack.push("World");
 		stack.push("!!!");
 		stack.push("java");
 		stack.push(".");
-
+		
 		while (stack.isEmpty() == false) {
 			String s = stack.pop();
 			System.out.println(s);
 		}
-
 		System.out.println("======================================");
 
 		stack = new MyStack(3);
