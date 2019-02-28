@@ -8,8 +8,30 @@ public class Main {
 //			q[i-1] = new Quiz(i);
 //		}
 		
-		int[][] quiz = quizSetting();
+//		int[][] quiz = quizSetting();
 		
+		final int N = 9; 
+		int[] dan = new int[N];
+		int[] n1 = new int[N];
+		int[] n2 = new int[N];
+		int[] cnt = new int[N];
+		
+		
+		//n1
+		for (int i=0; i<N; i++) {
+			int ran = (int)(Math.random()*9+1);
+			n1[i] = ran;
+		}
+		
+		//n2
+		for (int i=0; i<N; i++) {
+			int ran = (int)(Math.random()*9+1);
+			if (n1[i] == ran) {
+				i--;
+			} else {
+				n2[i] = ran;
+			}
+		}
 	}
 	
 	public static int[][] quizSetting() {

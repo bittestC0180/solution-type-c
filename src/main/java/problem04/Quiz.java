@@ -11,7 +11,7 @@ public class Quiz {
 	}
 	
 	public void setting() {
-		int n1 = (int)(Math.random()*9+1);
+		int n = (int)(Math.random()*9+1);
 		
 	}
 }
